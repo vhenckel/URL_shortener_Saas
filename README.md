@@ -1,1 +1,6 @@
-# URL_shortener_Saas
+# Desenvolvimento de uma aplicação Micro-Saas para encurtamento de URL's
+
+## Stack Back-end
+- Typescript
+- Node com framework Express
+- DB MySQL com Sequelize
