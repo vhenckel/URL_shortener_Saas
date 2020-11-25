@@ -4,3 +4,8 @@
 - Typescript
 - Node com framework Express
 - DB MySQL com Sequelize
+
+## Stack Front-end
+- React
+- React-Bootstrap
+- Styled Components
