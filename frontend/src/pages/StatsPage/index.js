@@ -6,7 +6,7 @@ import {  parseISO, formatRelative } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { StatsContainer, StatsRow, StatsBox, StatsBoxTitle } from './styles'
-
+import vars from '../../configs/vars'
 class StatsPage extends React.Component {
   constructor(props) {
     super(props)
@@ -49,7 +49,7 @@ class StatsPage extends React.Component {
           </StatsContainer>
         ) : (
           <StatsContainer className="text-center">
-            <p><b>http://pituapp.site/{shortenedURL.code}</b></p>
+            <p><b>${vars.HOST_BASE}{shortenedURL.code}</b></p>
             <p>Redireciona para:<br />{shortenedURL.url}</p>
             <StatsRow>
               <StatsBox>

@@ -3,7 +3,7 @@ import Header from '../../components/Header'
 import { Container, InputGroup, FormControl, Button, Alert, Spinner } from 'react-bootstrap'
 import { ContentContainer, Form, AdsBlock } from './styles'
 import ShortenerService from '../../services/shortenerService'
-
+import vars from '../../configs/vars'
 class HomePage extends React.Component {
   constructor(props) {
     super(props)
@@ -62,7 +62,7 @@ class HomePage extends React.Component {
                     <InputGroup className="mb-3">
                       <FormControl
                         autoFocus={ true }
-                        defaultValue={`http://pituapp.site/${code}`}
+                        defaultValue={`${vars.HOST_BASE}${code}`}
                         ref={ (input) => this.inputURL = input }
                       />
                       <InputGroup.Append>
