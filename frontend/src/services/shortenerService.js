@@ -6,12 +6,14 @@ class ShortenerService {
   }
 
   async getLink(code) {
-    const result = await this.api.get(`links/${code}`)
+    // const result = await this.api.get(`links/${code}`)
+    const result = await this.api.get(`links/${code}/stats`)
     return result.data
   }
 
   async getStats(code) {
-    const result = await this.api.get(`links/${code}/stats`)
+    // const result = await this.api.get(`links/${code}/stats`)
+    const result = await this.api.get(`links/${code}`)
     return result.data 
   }
 
