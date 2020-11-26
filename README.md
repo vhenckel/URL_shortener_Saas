@@ -10,4 +10,4 @@
 - React-Bootstrap
 - Styled Components
 
-[Link do projeto no ar](http://pituapp.site/)
+[Link do projeto no ar](http://www.pituapp.site/)
